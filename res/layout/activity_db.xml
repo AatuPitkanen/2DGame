@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_testi"
+     >
+
+          <TextView
+              android:id="@+id/textView1"
+              android:layout_width="200dp"
+              android:layout_height="30dp"
+              android:layout_alignLeft="@+id/button1"
+              android:layout_alignParentTop="true"
+              android:layout_marginLeft="21dp"
+              android:layout_marginTop="24dp"
+              android:text="Etunimi" />
+
+          <EditText
+              android:id="@+id/editText2"
+              android:layout_width="200dp"
+              android:layout_height="wrap_content"
+              android:layout_alignLeft="@+id/textView1"
+              android:layout_below="@+id/textView1"
+              android:layout_marginTop="20dp"
+              android:ems="10" />
+
+          <EditText
+              android:id="@+id/editText1"
+              android:layout_width="200dp"
+              android:layout_height="wrap_content"
+              android:layout_alignLeft="@+id/editText2"
+              android:layout_below="@+id/editText2"
+              android:layout_marginTop="31dp"
+              android:ems="10" />
+
+          <Button
+              android:id="@+id/button1"
+              android:layout_width="79dp"
+              android:layout_height="wrap_content"
+              android:layout_above="@+id/button4"
+              android:layout_alignLeft="@+id/NewGameButton"
+              android:layout_alignTop="@+id/ScoreButton"
+              android:onClick="buttonClicked"
+              android:text="Save" />
+
+          <Button
+              android:id="@+id/NewGameButton"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignBaseline="@+id/button4"
+              android:layout_alignBottom="@+id/button4"
+              android:layout_alignParentLeft="true"
+              android:layout_marginLeft="37dp"
+              android:onClick="NewGameClicked"
+              android:text="New Game" />
+
+          <Button
+              android:id="@+id/button4"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignLeft="@+id/ScoreButton"
+              android:layout_alignRight="@+id/ScoreButton"
+              android:layout_below="@+id/ScoreButton"
+              android:layout_marginTop="22dp"
+              android:onClick="BackClicked"
+              android:text="Back" />
+
+          <Button
+              android:id="@+id/ScoreButton"
+              android:layout_width="88dp"
+              android:layout_height="wrap_content"
+              android:layout_below="@+id/editText1"
+              android:layout_marginTop="64dp"
+              android:layout_toRightOf="@+id/NewGameButton"
+              android:minHeight="10dp"
+              android:onClick="buttonClicked2"
+              android:text="View score" />
+
+          <TextView
+              android:id="@+id/textView2"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignLeft="@+id/editText2"
+              android:layout_below="@+id/editText2"
+              android:text="Sukunimi" />
+
+</RelativeLayout>
